@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="org.zzk.spring.dependency.injection.User">
+        <property name="age" value="100"/>
+        <property name="name" value="test"/>
+     </bean>
+
+    <bean id="supperUser" class="org.zzk.spring.dependency.injection.SupperUser" parent="user"
+            primary="true">
+        <property name="address" value="杭州"/>
+        <property name="age" value="200"/>
+        <property name="name" value="test2"/>
+    </bean>
+
+
+</beans>
