@@ -20,9 +20,11 @@ public class BeanConfigurationMetadataDemo {
     public static void main(String[] args) {
         BeanDefinitionBuilder beanDefinitionBuilder = BeanDefinitionBuilder.genericBeanDefinition(User.class);
         beanDefinitionBuilder.addPropertyValue("name", "zzk");
-        //附加属性不影响bean的生成
+        //附加属性不影响(Bean populate、initialize)
         AbstractBeanDefinition beanDefinition = beanDefinitionBuilder.getBeanDefinition();
         beanDefinition.setAttribute("name", "gege");
+        //表示类来自何方
+        beanDefinition.setSource(BeanConfigurationMetadataDemo.class);
 
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
 
