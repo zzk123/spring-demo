@@ -15,6 +15,7 @@
         <module>depency-source</module>
         <module>bean-lifecycle</module>
         <module>configuration-metadata</module>
+        <module>validation</module>
     </modules>
 
     <properties>
@@ -44,6 +45,17 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.0.18.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mortbay.jasper</groupId>
+            <artifactId>apache-el</artifactId>
+            <version>8.0.33</version>
+        </dependency>
 
     </dependencies>
 
