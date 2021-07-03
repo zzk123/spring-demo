@@ -1,5 +1,7 @@
 package org.zzk.spring.bean.definition;
 
+import java.util.Properties;
+
 /**
  * @ClassName User
  * @Description TODO
@@ -13,6 +15,68 @@ public class User {
     private String name;
 
     private Integer age;
+
+    private Company company;
+
+    private Properties context;
+
+    private String contextAsText;
+
+    static class Company{
+
+        private String name;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        @Override
+        public String toString() {
+            return "Company{" +
+                    "name='" + name + '\'' +
+                    '}';
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", company=" + company +
+                ", context=" + context +
+                ", contextAsText='" + contextAsText + '\'' +
+                '}';
+    }
+
+    public Properties getContext() {
+        return context;
+    }
+
+    public void setContext(Properties context) {
+        this.context = context;
+    }
+
+    public String getContextAsText() {
+        return contextAsText;
+    }
+
+    public void setContextAsText(String contextAsText) {
+        this.contextAsText = contextAsText;
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
 
     public String getId() {
         return id;
@@ -36,14 +100,6 @@ public class User {
 
     public void setAge(Integer age) {
         this.age = age;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
     }
 
 

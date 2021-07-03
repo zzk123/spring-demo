@@ -16,6 +16,8 @@
         <module>bean-lifecycle</module>
         <module>configuration-metadata</module>
         <module>validation</module>
+        <module>data-binding</module>
+        <module>conversion</module>
     </modules>
 
     <properties>
