@@ -22,6 +22,8 @@
         <module>event</module>
         <module>annotation</module>
         <module>zuul-demo</module>
+        <module>ribbon-demo</module>
+        <module>gateway-demo</module>
     </modules>
 
     <properties>

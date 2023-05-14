@@ -17,6 +17,8 @@
         <module name="configuration-metadata" />
         <module name="eureka-service" />
         <module name="eureka-client" />
+        <module name="ribbon-demo" />
+        <module name="gateway-demo" />
         <module name="eureka-demo-service" />
         <module name="depency-source" />
         <module name="spring-bean" />
@@ -26,12 +28,18 @@
         <module name="conversion" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-client" target="8" />
+      <module name="eureka-service" target="8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-demo-client" options="-parameters" />
       <module name="eureka-demo-service" options="-parameters" />
+      <module name="gateway-demo" options="-parameters" />
       <module name="hystrix-demo" options="-parameters" />
+      <module name="ribbon-demo" options="-parameters" />
       <module name="zuul-demo" options="-parameters" />
     </option>
   </component>

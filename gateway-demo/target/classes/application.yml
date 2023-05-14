@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: gateway-client
+  profiles:
+    active: default
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+server:
+  port: 8001
+eureka:
+  instance:
+    hostname: gateway-client
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
