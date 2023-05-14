@@ -13,8 +13,10 @@
         <module name="eureka-demo-client" />
         <module name="generic" />
         <module name="configuration-metadata" />
-        <module name="depency-source" />
+        <module name="eureka-service" />
+        <module name="eureka-client" />
         <module name="eureka-demo-service" />
+        <module name="depency-source" />
         <module name="spring-bean" />
         <module name="bean-lifecycle" />
         <module name="event" />
