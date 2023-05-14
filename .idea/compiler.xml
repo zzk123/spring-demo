@@ -10,7 +10,9 @@
         <module name="data-binding" />
         <module name="dependency-injection" />
         <module name="dependency-lookup" />
+        <module name="hystrix-demo" />
         <module name="eureka-demo-client" />
+        <module name="zuul-demo" />
         <module name="generic" />
         <module name="configuration-metadata" />
         <module name="depency-source" />
@@ -27,6 +29,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-demo-client" options="-parameters" />
       <module name="eureka-demo-service" options="-parameters" />
+      <module name="hystrix-demo" options="-parameters" />
+      <module name="zuul-demo" options="-parameters" />
     </option>
   </component>
 </project>

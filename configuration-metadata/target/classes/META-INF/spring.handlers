@@ -1,0 +1,2 @@
+## 定义namespace 与 namespacehandler的映射
+http\://www.zzk.org/schema/users=org.zzk.spring.configuration.UserNamespaceHandler

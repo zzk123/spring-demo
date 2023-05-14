@@ -21,6 +21,7 @@
         <module>generic</module>
         <module>event</module>
         <module>annotation</module>
+        <module>zuul-demo</module>
     </modules>
 
     <properties>
