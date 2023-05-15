@@ -4,17 +4,26 @@ spring:
   profiles:
     active: default
   cloud:
-    gateway:
+    ##    gateway:
+      # 配置注册中心服务转发，转发后路径默认去掉服务名字
+    ##      discovery:
+    ##        locator:
+    ##          enabled: true
+    ##         lower-case-service-id: true
+    nacos:
+      config:
+        server-addr: http://127.0.0.1:8848
+        file-extension: json
+        namespace: public
+        group: gateway
       discovery:
-        locator:
-          enabled: true
-          lower-case-service-id: true
+        server-addr: http://127.0.0.1:8848
 server:
   port: 8001
-eureka:
-  instance:
-    hostname: gateway-client
-    prefer-ip-address: true
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+##eureka:
+## instance:
+##  hostname: gateway-client
+##  prefer-ip-address: true
+##client:
+##  serviceUrl:
+##    defaultZone: http://localhost:8761/eureka/
